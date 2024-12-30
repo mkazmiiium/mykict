@@ -222,7 +222,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span
+                            <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Academicians</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="teachers.html">Teacher List</a></li>
@@ -231,7 +231,7 @@
                                 <li><a href="edit-teacher.html">Teacher Edit</a></li>
                             </ul>
                         </li>
-                        <li class="submenu">
+                        {{-- <li class="submenu">
                             <a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
@@ -462,7 +462,7 @@
                                     <a href="javascript:void(0);"> <span>Level 1</span></a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
