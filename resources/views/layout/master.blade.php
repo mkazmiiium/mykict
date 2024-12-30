@@ -25,10 +25,10 @@
         <div class="header">
 
             <div class="header-left">
-                <a href="admin-dashboard" class="logo">
+                <a href="dashboard" class="logo">
                     <img src="assets/img/logo.png" alt="Logo">
                 </a>
-                <a href="admin-dashboard" class="logo logo-small">
+                <a href="dashboard" class="logo logo-small">
                     <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
                 </a>
             </div>
@@ -49,7 +49,7 @@
             </a>
 
             <ul class="nav user-menu">
-                <li class="nav-item dropdown noti-dropdown language-drop me-2">
+                {{-- <li class="nav-item dropdown noti-dropdown language-drop me-2">
                     <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
                         <img src="assets/img/icons/header-icon-01.svg" alt="">
                     </a>
@@ -64,9 +64,9 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li> --}}
 
-                <li class="nav-item dropdown noti-dropdown me-2">
+                {{-- <li class="nav-item dropdown noti-dropdown me-2">
                     <a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
                         <img src="assets/img/icons/header-icon-05.svg" alt="">
                     </a>
@@ -154,7 +154,7 @@
                             <a href="#">View all Notifications</a>
                         </div>
                     </div>
-                </li>
+                </li> --}}
 
                 <li class="nav-item zoom-screen me-2">
                     <a href="#" class="nav-link header-nav-list win-maximize">
@@ -166,27 +166,37 @@
                     <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                         <span class="user-img">
                             <img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31"
-                                alt="Soeng Souy">
+                                alt="{{ Auth::user()->name }}">
                             <div class="user-text">
-                                <h6>Soeng Souy</h6>
-                                <p class="text-muted mb-0">Administrator</p>
+                                <h6>{{ Auth::user()->name }}</h6>
+                                <p class="text-muted mb-0">{{ Auth::user()->role->name }}</p>
                             </div>
                         </span>
                     </a>
                     <div class="dropdown-menu">
-                        <div class="user-header">
+                        {{-- <div class="user-header">
                             <div class="avatar avatar-sm">
                                 <img src="assets/img/profiles/avatar-01.jpg" alt="User Image"
                                     class="avatar-img rounded-circle">
                             </div>
                             <div class="user-text">
-                                <h6>Soeng Souy</h6>
-                                <p class="text-muted mb-0">Administrator</p>
+                                <h6>{{ Auth::user()->name }}</h6>
+                                <p class="text-muted mb-0">{{ Auth::user()->role->name }}</p>
                             </div>
-                        </div>
-                        <a class="dropdown-item" href="profile.html">My Profile</a>
-                        <a class="dropdown-item" href="inbox.html">Inbox</a>
-                        <a class="dropdown-item" href="login.html">Logout</a>
+                        </div> --}}
+                        {{-- <a class="dropdown-item" href="profile.html">My Profile</a> --}}
+                        <a class="dropdown-item" href="{{ route('profile.show') }}">My Profile</a>
+
+                        {{-- <x-dropdown-link href="{{ route('profile.show') }}">
+                            {{ __('My Profile') }}
+                        </x-dropdown-link> --}}
+
+                        {{-- <a class="dropdown-item" href="inbox.html">Inbox</a> --}}
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="dropdown-item">Logout</button>
+                        </form>
+
                     </div>
                 </li>
 
@@ -206,7 +216,7 @@
                             <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="admin-dashboard">Admin Dashboard</a></li>
+                                <li><a href="dashboard">Admin Dashboard</a></li>
                                 <li><a href="teacher-dashboard">Teacher Dashboard</a></li>
                                 <li><a href="student-dashboard">Student Dashboard</a></li>
                             </ul>
