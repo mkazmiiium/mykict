@@ -212,35 +212,45 @@
                         <li class="menu-title">
                             <span>Main Menu</span>
                         </li>
-                        <li class="submenu active">
-                            <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span
-                                    class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="dashboard">Admin Dashboard</a></li>
-                                <li><a href="teacher-dashboard">Teacher Dashboard</a></li>
-                                <li><a href="student-dashboard">Student Dashboard</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span
-                                    class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="students.html">Student List</a></li>
-                                <li><a href="student-details.html">Student View</a></li>
-                                <li><a href="add-student.html">Student Add</a></li>
-                                <li><a href="edit-student.html">Student Edit</a></li>
-                            </ul>
-                        </li>
+
+                        @if (Auth::user()->role_id == '1')
+                            <li class="submenu active">
+                                <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span
+                                        class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a href="dashboard">Admin Dashboard</a></li>
+                                    <li><a href="teacher-dashboard">Teacher Dashboard</a></li>
+                                    <li><a href="student-dashboard">Student Dashboard</a></li>
+                                </ul>
+                            </li>
+                        @endif
+
+                        @if (Auth::user()->role_id == '1' || Auth::user()->role_id == '5')
                         <li class="submenu">
                             <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Academicians</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="teachers.html">Teacher List</a></li>
+                                <li><a href="teachers.html">Monthly Achievement</a></li>
                                 <li><a href="teacher-details.html">Teacher View</a></li>
                                 <li><a href="add-teacher.html">Teacher Add</a></li>
                                 <li><a href="edit-teacher.html">Teacher Edit</a></li>
                             </ul>
                         </li>
+                        @endif
+
+                        @if (Auth::user()->role_id == '1' || Auth::user()->role_id == '6')
+                            <li class="submenu">
+                                <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span
+                                        class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a href="students.html">Student List</a></li>
+                                    <li><a href="student-details.html">Student View</a></li>
+                                    <li><a href="add-student.html">Student Add</a></li>
+                                    <li><a href="edit-student.html">Student Edit</a></li>
+                                </ul>
+                            </li>
+                        @endif
+
                         {{-- <li class="submenu">
                             <a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span
                                     class="menu-arrow"></span></a>
