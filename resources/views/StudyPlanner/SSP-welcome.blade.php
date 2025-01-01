@@ -34,7 +34,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('cgpa.calculator') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">CGPA CALCULATOR</a>
+            <a href="{{ route('cgpa.calculator') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">CGPA CALCULATOR AND FORECASTER</a>
         </div>
 
     </div>
