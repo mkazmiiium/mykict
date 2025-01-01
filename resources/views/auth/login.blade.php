@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Preskool - Login</title>
+    <title>MyKICT- Login</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.png">
@@ -36,7 +36,7 @@
                     <div class="login-right">
                         <div class="login-right-wrap">
                             <!-- Heading -->
-                            <h1>Welcome to Preskool</h1>
+                            <h1>Welcome to MyKICT</h1>
                             <p class="account-subtitle">Need an account? <a href="{{ route('register') }}">Sign Up</a>
                             </p>
                             <h2>Sign in</h2>

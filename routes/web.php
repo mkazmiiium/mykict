@@ -53,5 +53,23 @@ Route::get('assign-vetters', function () {
     return view('SEMS.assign-vetters');
 })->name('assign.vetters');
 
+// Route for Student welcome Page
+Route::get('SSP-welcome', function () {
+    return view('StudyPlanner.SSP-welcome');
+})->name('SSP.welcome');
 
+// Route for Student Dashboard
+Route::get('SSP-dashboard', function () {
+    return view('StudyPlanner.SSP-dashboard');
+})->name('SSP.dashboard');
+
+// Route for View Course Suggested
+Route::get('view-course', function () {
+    return view('StudyPlanner.view-course');
+})->name('view.course');
+
+// Route for CGPA Calculator
+Route::get('cgpa-calculator', function () {
+    return view('StudyPlanner.cgpa-calculator');
+})->name('cgpa.calculator');
 
