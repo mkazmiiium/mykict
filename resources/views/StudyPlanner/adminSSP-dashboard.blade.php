@@ -9,9 +9,10 @@
                     <div class="page-sub-header">
                         <h3 class="page-title">Welcome Admin001!</h3>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-                            <li class="breadcrumb-item"><a href="admin-welcome">Admin</a></li>
-                            <li class="breadcrumb-item active">Admin Dashboard</li>
+                            <li class="breadcrumb-item"><a href="{{ route('admin.welcome') }}">Home</a></li>
+                            <li class="breadcrumb-item active">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('list.course') }}">Course</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('add.studyplan') }}">Study Plan</a></li>
                         </ul>
                     </div>
                 </div>

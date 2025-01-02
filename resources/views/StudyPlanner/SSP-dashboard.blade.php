@@ -1,6 +1,22 @@
 @extends('layouts.master')
 
 @section('content')
+<!--<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/feather/feather.css">
+
+    <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>-->
+
     <div class="content container-fluid">
 
         <div class="page-header">
@@ -9,8 +25,10 @@
                     <div class="page-sub-header">
                         <h3 class="page-title">Welcome Nur Ain!</h3>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-                            <li class="breadcrumb-item active">Student</li>
+                            <li class="breadcrumb-item"><a href="{{ route('SSP.welcome') }}">Home</a></li>
+                            <li class="breadcrumb-item active">Student Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('view.course') }}">View Suggested Courses</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('cgpa.calculator') }}">CGPA Calculator</a></li>
                         </ul>
                     </div>
                 </div>

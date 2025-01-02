@@ -9,10 +9,11 @@
                 <div class="col">
                     <h3 class="page-title">Course</h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="admin-welcome">Home</a></li>
-                        <li class="breadcrumb-item"><a href="admin-welcome">Admin</a></li>
-                        <li class="breadcrumb-item"><a href="list-course">Courses</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('admin.welcome') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('adminSSP.dashboard') }}">Dashboard</a></li>
                         <li class="breadcrumb-item active">Add Course</li>
+                        <li class="breadcrumb-item"><a href="{{ route('add.studyplan') }}">Study Plan</a></li>
+
                     </ul>
                 </div>
             </div>

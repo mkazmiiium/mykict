@@ -27,8 +27,10 @@
                 <div class="col">
                     <h3 class="page-title">Study Plans</h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Study Plans</li>
+                        <li class="breadcrumb-item"><a href="{{ route('admin.welcome') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('adminSSP.dashboard') }}">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('list.course') }}">Course</a></li>
+                        <li class="breadcrumb-item active">Study Plan</a></li>
                     </ul>
                 </div>
             </div>
