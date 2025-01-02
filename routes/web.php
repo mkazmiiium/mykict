@@ -53,7 +53,9 @@ Route::get('assign-vetters', function () {
     return view('SEMS.assign-vetters');
 })->name('assign.vetters');
 
-// Route for Student welcome Page
+// SSP
+
+// Route for Student Welcome Page
 Route::get('SSP-welcome', function () {
     return view('StudyPlanner.SSP-welcome');
 })->name('SSP.welcome');
@@ -72,4 +74,29 @@ Route::get('view-course', function () {
 Route::get('cgpa-calculator', function () {
     return view('StudyPlanner.cgpa-calculator');
 })->name('cgpa.calculator');
+
+// Route for Admin Welcome Page
+Route::get('admin-welcome', function () {
+    return view('StudyPlanner.admin-welcome');
+})->name('admin.welcome');
+
+// Route for Admin Dashboard
+Route::get('adminSSP-dashboard', function () {
+    return view('StudyPlanner.adminSSP-dashboard');
+})->name('adminSSP.dashboard');
+
+// Route for Add Course
+Route::get('add-course', function () {
+    return view('StudyPlanner.add-course');
+})->name('add.course');
+
+// Route for Add Study Plan
+Route::get('add-studyplan', function () {
+    return view('StudyPlanner.add-studyplan');
+})->name('add.studyplan');
+
+// Route for Add Study Plan
+Route::get('edit-course', function () {
+    return view('StudyPlanner.edit-course');
+})->name('edit.course');
 
