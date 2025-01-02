@@ -3,14 +3,11 @@
 @section('content')
 
 <div class="content container-fluid">
-    <div style="margin-top: 15px;">
-        <a href="{{ route('SEMS.dashboard') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">SEMS DASHBOARD</a>
-    </div>
 
     <div class="page-header">
         <div class="row">
             <div class="col">
-                <h3 class="page-title">Question Review</h3>
+                <h3 class="page-title">Question Approval</h3>
                 <ul class="breadcrumb justify-content-center" style="list-style: none; padding: 0; margin-top: 20px;">
                     <li class="breadcrumb-item">
                         <a href="SEMS-dashboard" style="color: #000000; text-decoration: none;">SEMS</a>
