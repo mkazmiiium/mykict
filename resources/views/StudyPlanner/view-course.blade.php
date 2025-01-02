@@ -2,6 +2,7 @@
 
 @section('content')
 
+<head>
 
 <link rel="shortcut icon" href="assets/img/favicon.png">
 
@@ -30,10 +31,10 @@
         <div class="page-header">
             <div class="row align-items-center">
                 <div class="col">
-                    <h3 class="page-title">Subject</h3>
+                    <h3 class="page-title">Course</h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ route('SSP.dashboard') }}">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Subjects</li>
+                        <li class="breadcrumb-item"><a href="{{ route('SSP.dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item active">View Suggested Courses</li>
                     </ul>
                 </div>
             </div>
@@ -48,12 +49,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search by Name ...">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search by Class ...">
+                        <input type="text" class="form-control" placeholder="Search by Course Title ...">
                     </div>
                 </div>
                 <div class="col-lg-2">
@@ -71,7 +67,7 @@
                         <div class="page-header">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <h3 class="page-title">Subjects</h3>
+                                    <h3 class="page-title">Suggested Courses</h3>
                                 </div>
                                 <div class="col-auto text-end float-end ms-auto download-grp">
                                     <a href="#" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i>
@@ -88,45 +84,72 @@
                                         <th>Course Code</th>
                                         <th>Course Title</th>
                                         <th>Credit Hour</th>
-                                        <th>Prerequisite</th>
+                                        <th>Pre-Requisite</th>
                                         <th>Year</th>
                                         <th>Semester</th>
+                                        <th>Category</th>
+                                        <th>Department</th>
+                                        <th>Specialization</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 
                                 <tbody>
                                     <tr class="table-form-control add-row">
-                                        <td>INFO 3305</td>
-                                        <td>Web Application Development</td>
+                                        <td>INFO1302</td>
+                                        <td>Business Fundamentals</td>
                                         <td>3</td>
-                                        <td>INFO 2302</td>
-                                        <td>3</td>
+                                        <td>-</td>
                                         <td>1</td>
+                                        <td>1</td>
+                                        <td>Kulliyyah Required</td>
+                                        <td>Information Systems</td>
+                                        <td>-</td>
                                         <td class="add-remove text-end">
                                             <a href="javascript:void(0);" class="add-btn me-2"><i class="fas fa-plus-circle"></i></a>
                                             <a href="#" class="copy-btn me-2"><i class="fe fe-copy"></i></a><a href="javascript:void(0);" class="remove-btn"><i class="fe fe-trash-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr class="table-form-control add-row">
-                                        <td>INFO 3304</td>
-                                        <td>E-Commerce</td>
+                                    <td>CSCI1300</td>
+                                        <td>Elements of Programming</td>
                                         <td>3</td>
-                                        <td>INFO 2302, INFO 2305</td>
-                                        <td>3</td>
+                                        <td>-</td>
                                         <td>1</td>
+                                        <td>1</td>
+                                        <td>Kulliyyah Required</td>
+                                        <td>Computer Science</td>
+                                        <td>-</td>
                                         <td class="add-remove text-end">
                                             <a href="javascript:void(0);" class="add-btn me-2"><i class="fas fa-plus-circle"></i></a>
                                             <a href="#" class="copy-btn me-2"><i class="fe fe-copy"></i></a><a href="javascript:void(0);" class="remove-btn"><i class="fe fe-trash-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr class="table-form-control add-row">
-                                        <td>INFO 3308</td>
-                                        <td>Project Management in IT</td>
+                                    <td>INFO1303</td>
+                                        <td>Database Systems</td>
                                         <td>3</td>
-                                        <td>INFO 2304</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>Kulliyyah Required</td>
+                                        <td>Information Systems</td>
+                                        <td>-</td>                                   
+                                        <td class="add-remove text-end">
+                                            <a href="javascript:void(0);" class="add-btn me-2"><i class="fas fa-plus-circle"></i></a>
+                                            <a href="#" class="copy-btn me-2"><i class="fe fe-copy"></i></a><a href="javascript:void(0);" class="remove-btn"><i class="fe fe-trash-2"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-form-control add-row">
+                                    <td>CSCI1301</td>
+                                        <td>Object-Oriented Programming</td>
                                         <td>3</td>
-                                        <td>1</td>                                   
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>Kulliyyah Required</td>
+                                        <td>Computer Science</td>
+                                        <td>-</td>                                   
                                         <td class="add-remove text-end">
                                             <a href="javascript:void(0);" class="add-btn me-2"><i class="fas fa-plus-circle"></i></a>
                                             <a href="#" class="copy-btn me-2"><i class="fe fe-copy"></i></a><a href="javascript:void(0);" class="remove-btn"><i class="fe fe-trash-2"></i></a>
