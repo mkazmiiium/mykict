@@ -220,7 +220,7 @@
                         <li class="submenu active">
                             <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="welcome-dashboard">Welcome Dashboard</a></li>
+                                <li><a href="dashboard">Welcome Dashboard</a></li>
                                 <li><a href="admin-dashboard">Admin Dashboard</a></li>
                                 <!--<li><a href="teacher-dashboard">Teacher Dashboard</a></li>-->
                                 <li><a href="student-dashboard">Student Dashboard</a></li>
