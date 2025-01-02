@@ -35,7 +35,12 @@
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('assign.vetters') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">ASSIGN VETTERS</a>
+            <a href="{{ route('assign.vetters') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">VETTERS ASSIGN</a>
+        </div>
+
+
+        <div style="margin-top: 15px;">
+            <a href="{{ route('approval.question') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">question approval</a>
         </div>
 
     </div>

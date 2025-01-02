@@ -53,6 +53,16 @@ Route::get('assign-vetters', function () {
     return view('SEMS.assign-vetters');
 })->name('assign.vetters');
 
+// Route for Course Coordinator Page
+Route::get('approval-question', function () {
+    return view('SEMS.approval-question');
+})->name('approval.question');
+
+// Route for Course Coordinator Page
+Route::get('question-review', function () {
+    return view('SEMS.question-review');
+})->name('question.review');
+
 // SSP
 
 // Route for Student Welcome Page

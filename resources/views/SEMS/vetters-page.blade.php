@@ -35,8 +35,8 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="search-student-btn">
-                        <button type="btn" class="btn btn-primary">Search</button>
+                    <div style="margin-top: 15px;">
+                        <a href="{{ route('question.review') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">question approval</a>
                     </div>
                 </div>
             </div>
