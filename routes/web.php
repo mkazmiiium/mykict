@@ -63,6 +63,18 @@ Route::get('question-review', function () {
     return view('SEMS.question-review');
 })->name('question.review');
 
+// Route for Course Coordinator Page
+Route::get('CC-dashboard', function () {
+    return view('SEMS.CC-dashboard');
+})->name('CC.dashboard');
+
+// Route for Course Coordinator Page
+Route::get('edit-question', function () {
+    return view('SEMS.edit-question');
+})->name('edit.question');
+
+
+
 // SSP
 
 // Route for Student Welcome Page

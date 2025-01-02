@@ -5,7 +5,7 @@
 
     <div class="page-header text-center" style="color: #fff;">
         <h3 class="page-title" style="
-            font-size: 3rem;
+            font-size: 5rem;
             font-weight: bold;
             text-transform: uppercase;
             color: #ffffff;
@@ -27,20 +27,15 @@
 
         <!-- Add Buttons -->
         <div style="margin-top: 15px;">
-            <a href="{{ route('create.question') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">CREATE EXAM QUESTION</a>
+            <a href="{{ route('CC.dashboard') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Course Coordinator Dashboard</a>
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('vetters.page') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">REVIEW QUESTION PAPER</a>
+            <a href="{{ route('vetters.page') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Vetters Dashboard</a>
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('assign.vetters') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">VETTERS ASSIGN</a>
-        </div>
-
-
-        <div style="margin-top: 15px;">
-            <a href="{{ route('approval.question') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">question approval</a>
+            <a href="{{ route('assign.vetters') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Department Dashboard</a>
         </div>
 
     </div>

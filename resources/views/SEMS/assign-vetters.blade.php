@@ -1,11 +1,18 @@
 @extends('layouts.master')
 
 @section('content')
+<style>
+    .table th, .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
+</style>
 <div class="content container-fluid">
     <div class="page-header">
         <div class="row align-items-center">
             <div class="col">
-                <h3 class="page-title">Subjects</h3>
+                <h1 class="page-title">HOD SEMS DASHBOARD</h1>
+                <h1 class="page-title">Welcome Dr Khairul</h1>
                 <ul class="breadcrumb justify-content-center" style="list-style: none; padding: 0; margin-top: 20px;">
                     <li class="breadcrumb-item">
                         <a href="SEMS-dashboard" style="color: #000000; text-decoration: none;">SEMS</a>
@@ -15,58 +22,6 @@
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="card">
-                <div class="card-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-12">
-                                <h5 class="form-title"><span>Department Details</span></h5>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="form-group local-forms">
-                                    <label>Department ID <span class="login-danger">*</span></label>
-                                    <input type="text" class="form-control" value="PRE1534">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="form-group local-forms">
-                                    <label>Department Name <span class="login-danger">*</span></label>
-                                    <input type="text" class="form-control" value="MCA">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="form-group local-forms">
-                                    <label>Head of Department <span class="login-danger">*</span></label>
-                                    <input type="text" class="form-control" value="Lois A">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="form-group local-forms calendar-icon">
-                                    <label>Department Start Date <span class="login-danger">*</span></label>
-                                    <input class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="form-group local-forms">
-                                    <label>No of Students <span class="login-danger">*</span></label>
-                                    <input type="text" class="form-control" value="200">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="student-submit">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="student-group-form">
         <div class="row">
@@ -122,7 +77,8 @@
                                     <th>ID</th>
                                     <th>Name</th>
                                     <th>Class</th>
-                                    <th class="text-end">Action</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -139,14 +95,34 @@
                                         </h2>
                                     </td>
                                     <td>5</td>
-                                    <td class="text-end">
-                                        <div class="actions">
-                                            <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
-                                                <i class="feather-eye"></i>
+                                    <td>Pending</td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <!-- Assign Vetters Dropdown -->
+                                            <div class="dropdown me-2">
+                                                <button class="btn btn-sm bg-primary-light dropdown-toggle d-flex align-items-center" type="button" id="assignVettersDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-user-plus me-2"></i>
+                                                    <span>Assign Vetters</span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="assignVettersDropdown">
+                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Approval Button -->
+                                            <a href="approval-question" class="btn btn-sm bg-success-light me-2">
+                                                <i class="fa fa-check"></i>
+                                                <span>Approval</span>
                                             </a>
-                                            <a href="edit-subject.html" class="btn btn-sm bg-danger-light">
-                                                <i class="feather-edit"></i>
-                                            </a>
+
+                                            <!-- Redo Button -->
+                                            <button class="btn btn-sm" onclick="handleRedo()">
+                                                <i class="fa fa-backward"></i>
+                                                <span>Redo</span>
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -163,14 +139,34 @@
                                         </h2>
                                     </td>
                                     <td>6</td>
-                                    <td class="text-end">
-                                        <div class="actions">
-                                            <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
-                                                <i class="feather-eye"></i>
+                                    <td>Done</td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <!-- Assign Vetters Dropdown -->
+                                            <div class="dropdown me-2">
+                                                <button class="btn btn-sm bg-primary-light dropdown-toggle d-flex align-items-center" type="button" id="assignVettersDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-user-plus me-2"></i>
+                                                    <span>Assign Vetters</span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="assignVettersDropdown">
+                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Approval Button -->
+                                            <a href="approval-question" class="btn btn-sm bg-success-light me-2">
+                                                <i class="fa fa-check"></i>
+                                                <span>Approval</span>
                                             </a>
-                                            <a href="edit-subject.html" class="btn btn-sm bg-danger-light">
-                                                <i class="feather-edit"></i>
-                                            </a>
+
+                                            <!-- Redo Button -->
+                                            <button class="btn btn-sm" onclick="handleRedo()">
+                                                <i class="fa fa-backward"></i>
+                                                <span>Redo</span>
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -187,14 +183,33 @@
                                         </h2>
                                     </td>
                                     <td>3</td>
-                                    <td class="text-end">
-                                        <div class="actions">
-                                            <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
-                                                <i class="feather-eye"></i>
+                                    <td>Pending</td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <!-- Assign Vetters Dropdown -->
+                                            <div class="dropdown me-2">
+                                                <button class="btn btn-sm bg-primary-light dropdown-toggle d-flex align-items-center" type="button" id="assignVettersDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-user-plus me-2"></i>
+                                                    <span>Assign Vetters</span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="assignVettersDropdown">
+                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Approval Button -->
+                                            <a href="approval-question" class="btn btn-sm bg-success-light me-2">
+                                                <i class="fa fa-check"></i>
+                                                <span>Approval</span>
                                             </a>
-                                            <a href="edit-subject.html" class="btn btn-sm bg-danger-light">
-                                                <i class="feather-edit"></i>
-                                            </a>
+
+                                            <!-- Redo Button -->
+                                            <button class="btn btn-sm" onclick="handleRedo()">
+                                                <i class="fa fa-backward"></i>
+                                                <span>Redo</span>
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -211,14 +226,33 @@
                                         </h2>
                                     </td>
                                     <td>8</td>
-                                    <td class="text-end">
-                                        <div class="actions">
-                                            <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
-                                                <i class="feather-eye"></i>
+                                    <td>Done</td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <!-- Assign Vetters Dropdown -->
+                                            <div class="dropdown me-2">
+                                                <button class="btn btn-sm bg-primary-light dropdown-toggle d-flex align-items-center" type="button" id="assignVettersDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-user-plus me-2"></i>
+                                                    <span>Assign Vetters</span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="assignVettersDropdown">
+                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Approval Button -->
+                                            <a href="approval-question" class="btn btn-sm bg-success-light me-2">
+                                                <i class="fa fa-check"></i>
+                                                <span>Approval</span>
                                             </a>
-                                            <a href="edit-subject.html" class="btn btn-sm bg-danger-light">
-                                                <i class="feather-edit"></i>
-                                            </a>
+
+                                            <!-- Redo Button -->
+                                            <button class="btn btn-sm" onclick="handleRedo()">
+                                                <i class="fa fa-backward"></i>
+                                                <span>Redo</span>
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -235,14 +269,33 @@
                                         </h2>
                                     </td>
                                     <td>9</td>
-                                    <td class="text-end">
-                                        <div class="actions">
-                                            <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
-                                                <i class="feather-eye"></i>
+                                    <td>Pending</td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <!-- Assign Vetters Dropdown -->
+                                            <div class="dropdown me-2">
+                                                <button class="btn btn-sm bg-primary-light dropdown-toggle d-flex align-items-center" type="button" id="assignVettersDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-user-plus me-2"></i>
+                                                    <span>Assign Vetters</span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="assignVettersDropdown">
+                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Approval Button -->
+                                            <a href="approval-question" class="btn btn-sm bg-success-light me-2">
+                                                <i class="fa fa-check"></i>
+                                                <span>Approval</span>
                                             </a>
-                                            <a href="edit-subject.html" class="btn btn-sm bg-danger-light">
-                                                <i class="feather-edit"></i>
-                                            </a>
+
+                                            <!-- Redo Button -->
+                                            <button class="btn btn-sm" onclick="handleRedo()">
+                                                <i class="fa fa-backward"></i>
+                                                <span>Redo</span>
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -259,14 +312,34 @@
                                         </h2>
                                     </td>
                                     <td>4</td>
-                                    <td class="text-end">
-                                        <div class="actions">
-                                            <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
-                                                <i class="feather-eye"></i>
+                                    <td>Done</td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <!-- Assign Vetters Dropdown -->
+                                            <div class="dropdown me-2">
+                                                <button class="btn btn-sm bg-primary-light dropdown-toggle d-flex align-items-center" type="button" id="assignVettersDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-user-plus me-2"></i>
+                                                    <span>Assign Vetters</span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="assignVettersDropdown">
+                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Approval Button -->
+                                            <a href="approval-question" class="btn btn-sm bg-success-light me-2">
+                                                <i class="fa fa-check"></i>
+                                                <span>Approval</span>
                                             </a>
-                                            <a href="edit-subject.html" class="btn btn-sm bg-danger-light">
-                                                <i class="feather-edit"></i>
-                                            </a>
+
+                                            <!-- Redo Button -->
+                                            <button class="btn btn-sm" onclick="handleRedo()">
+                                                <i class="fa fa-backward"></i>
+                                                <span>Redo</span>
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -278,5 +351,11 @@
         </div>
     </div>
 </div>
+
+<script>
+    function handleRedo() {
+        alert("The question has been sent back to the Course Coordinator.");
+    }
+</script>
 
 @endsection
