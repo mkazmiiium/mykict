@@ -31,12 +31,6 @@
 <input type="text" class="form-control">
 </div>
 </div>
-<!-- <div class="form-group row">
-<label class="col-form-label col-md-2">Matric Number</label>
-<div class="col-md-10">
-<input type="text" class="form-control" disabled="disabled">
-</div>
-</div> -->
 <div class="form-group row">
 <label class="col-form-label col-md-2">Matric Number</label>
 <div class="col-md-10">

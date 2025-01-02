@@ -253,7 +253,7 @@
 <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
 <div class="card invoices-grid-card w-100">
 <div class="card-header d-flex justify-content-between align-items-center">
-<a href="view-invoice.html" class="invoice-grid-link">INFO1003</a>
+<a href="view-invoice.html" class="invoice-grid-link">CSCI1300</a>
 <div class="dropdown dropdown-action">
 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
 <div class="dropdown-menu dropdown-menu-end">
@@ -296,7 +296,7 @@
 <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
 <div class="card invoices-grid-card w-100">
 <div class="card-header d-flex justify-content-between align-items-center">
-<a href="view-invoice.html" class="invoice-grid-link">INFO1303</a>
+<a href="view-invoice.html" class="invoice-grid-link">CSCI1301</a>
 <div class="dropdown dropdown-action">
 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
 <div class="dropdown-menu dropdown-menu-end">
@@ -311,18 +311,20 @@
 <a href="profile.html"> Object Oriented Programming</a>
 </h2>
 </div>
+
 <div class="card-body">
-<div class="row align-items-center">
-<div class="col">
-<span><i class="far fa-money-bill-alt"></i> Total Students</span>
-<h6 class="mb-0">132</h6>
+    <div class="row align-items-center">
+        <div class="col">
+            <span><i class="fas fa-users"></i> Total Students</span>
+            <h6 class="mb-0">132</h6>
+        </div>
+        <div class="col-auto">
+            <span><i class="fas fa-columns"></i> Number of Sections</span>
+            <h6 class="mb-0">4</h6>
+        </div>
+    </div>
 </div>
-<div class="col-auto">
-<span><i class="far fa-calendar-alt"></i> Number of Sections</span>
-<h6 class="mb-0">4</h6>
-</div>
-</div>
-</div>
+
 <div class="card-footer">
 <div class="row align-items-center">
 <div class="col-auto">
@@ -336,7 +338,7 @@
 <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
 <div class="card invoices-grid-card w-100">
 <div class="card-header d-flex justify-content-between align-items-center">
-<a href="view-invoice.html" class="invoice-grid-link">CSCI1003</a>
+<a href="view-invoice.html" class="invoice-grid-link">INFO1303</a>
 <div class="dropdown dropdown-action">
 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
 <div class="dropdown-menu dropdown-menu-end">
@@ -348,21 +350,23 @@
 </div>
 <div class="card-middle">
 <h2 class="card-middle-avatar">
-<a href="profile.html">Introduction to Computer Organization</a>
+<a href="profile.html">Database Systems</a>
 </h2>
 </div>
+
 <div class="card-body">
-<div class="row align-items-center">
-<div class="col">
-<span><i class="far fa-money-bill-alt"></i> Total Students</span>
-<h6 class="mb-0">99</h6>
+    <div class="row align-items-center">
+        <div class="col">
+            <span><i class="fas fa-users"></i> Total Students</span>
+            <h6 class="mb-0">99</h6>
+        </div>
+        <div class="col-auto">
+            <span><i class="fas fa-columns"></i> Number of Sections</span>
+            <h6 class="mb-0">3</h6>
+        </div>
+    </div>
 </div>
-<div class="col-auto">
-<span><i class="far fa-calendar-alt"></i> Number of Sections</span>
-<h6 class="mb-0">3</h6>
-</div>
-</div>
-</div>
+
 <div class="card-footer">
 <div class="row align-items-center">
 <div class="col-auto">
@@ -376,7 +380,7 @@
 <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
 <div class="card invoices-grid-card w-100">
 <div class="card-header d-flex justify-content-between align-items-center">
-<a href="view-invoice.html" class="invoice-grid-link">IN093439#@15</a>
+<a href="view-invoice.html" class="invoice-grid-link">INFO1302</a>
 <div class="dropdown dropdown-action">
 <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
 <div class="dropdown-menu dropdown-menu-end">
@@ -388,31 +392,32 @@
 </div>
 <div class="card-middle">
 <h2 class="card-middle-avatar">
-<a href="profile.html">Alex Campbell</a>
+<a href="profile.html">Business Fundamentals</a>
 </h2>
 </div>
+
 <div class="card-body">
-<div class="row align-items-center">
-<div class="col">
-<span><i class="far fa-money-bill-alt"></i> Amount</span>
-<h6 class="mb-0">$1,999</h6>
+    <div class="row align-items-center">
+        <div class="col">
+            <span><i class="fas fa-users"></i> Total Students</span>
+            <h6 class="mb-0">140</h6>
+        </div>
+        <div class="col-auto">
+            <span><i class="fas fa-columns"></i> Number of Sections</span>
+            <h6 class="mb-0">5</h6>
+        </div>
+    </div>
 </div>
-<div class="col-auto">
-<span><i class="far fa-calendar-alt"></i> Due Date</span>
-<h6 class="mb-0">08 Mar 2022</h6>
-</div>
-</div>
-</div>
+
 <div class="card-footer">
 <div class="row align-items-center">
 <div class="col-auto">
-<span class="badge bg-danger-dark">Overdue</span>
+<span class="badge bg-success-dark">Open</span>
 </div>
-<div class="col text-end">
-<span class="text-danger text-sm">Overdue 10 days</span>
-</div>
+
 </div>
 </div>
+
 </div>
 </div>
 

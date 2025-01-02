@@ -30,11 +30,11 @@
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('add.course') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">ADD COURSE</a>
+            <a href="{{ route('list.course') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">COURSES</a>
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('add.studyplan') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">ADD STUDY PLAN</a>
+            <a href="{{ route('add.studyplan') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">STUDY PLAN</a>
         </div>
 
     </div>

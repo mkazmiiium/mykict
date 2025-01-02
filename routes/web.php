@@ -95,18 +95,18 @@ Route::get('adminSSP-dashboard', function () {
     return view('StudyPlanner.adminSSP-dashboard');
 })->name('adminSSP.dashboard');
 
-// Route for Add Course
-Route::get('add-course', function () {
-    return view('StudyPlanner.add-course');
-})->name('add.course');
+// Route for Course
+Route::get('list-course', function () {
+    return view('StudyPlanner.list-course');
+})->name('list.course');
 
-// Route for Add Study Plan
+// Route for Study Plan
 Route::get('add-studyplan', function () {
     return view('StudyPlanner.add-studyplan');
 })->name('add.studyplan');
 
-// Route for Add Study Plan
-Route::get('edit-course', function () {
-    return view('StudyPlanner.edit-course');
-})->name('edit.course');
+// Route for Add Course
+Route::get('add-course', function () {
+    return view('StudyPlanner.add-course');
+})->name('add.course');
 
