@@ -34,7 +34,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('add.studyplan') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">STUDY PLAN</a>
+            <a href="{{ route('add.studyplan') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">STUDY PLANS</a>
         </div>
 
     </div>
