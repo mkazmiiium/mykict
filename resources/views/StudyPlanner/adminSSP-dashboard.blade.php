@@ -7,303 +7,467 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="page-sub-header">
-                        <h3 class="page-title">Welcome Admin ***!</h3>
+                        <h3 class="page-title">Welcome Admin001!</h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-                            <li class="breadcrumb-item active">Student</li>
+                            <li class="breadcrumb-item active">Admin Dashboard</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="row">
-            <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                <div class="card bg-comman w-100">
-                    <div class="card-body">
-                        <div class="db-widgets d-flex justify-content-between align-items-center">
-                            <div class="db-info">
-                                <h6>Matric No</h6>
-                                <h3>2127942</h3>
-
-                                <h6>Name</h6>
-                                <h3>Nur Ain binti Lizam</h3>
-                            </div>
-                            <div class="db-icon">
-                                <img src="assets/img/icons/teacher-icon-01.svg" alt="Dashboard Icon">
-                            </div>
-                        </div>
+    <div class="col-xl-auto col-sm-6 col-12 d-flex">
+        <div class="card bg-comman w-100">
+            <div class="card-body">
+                <div class="db-widgets d-flex justify-content-between align-items-center">
+                    <div class="db-info">
+                        <h6>Admin ID</h6>
+                        <h3>Admin001</h3>
+                        <h6>Name</h6>
+                        <h3>Nur Fatihah Adawiyah binti Rusdi</h3>
                     </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                <div class="card bg-comman w-100">
-                    <div class="card-body">
-                        <div class="db-widgets d-flex justify-content-between align-items-center">
-                            <div class="db-info">
-                                <h6>Major</h6>
-                                <h3>BIT</h3>
-                                <h6>Specialization</h6>
-                                <h3>Business Intelligence and Analytics</h3>
-                            </div>
-                            <div class="db-icon">
-                                <img src="assets/img/icons/teacher-icon-02.svg" alt="Dashboard Icon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                <div class="card bg-comman w-100">
-                    <div class="card-body">
-                        <div class="db-widgets d-flex justify-content-between align-items-center">
-                            <div class="db-info">
-                                <h6>Year</h6>
-                                <h3>3</h3>
-                                <h6>Semester</h6>
-                                <h3>2</h3>
-                            </div>
-                            <div class="db-icon">
-                                <img src="assets/img/icons/student-icon-01.svg" alt="Dashboard Icon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                <div class="card bg-comman w-100">
-                    <div class="card-body">
-                        <div class="db-widgets d-flex justify-content-between align-items-center">
-                            <div class="db-info">
-                                <h6>Current CGPA</h6>
-                                <h3>3.54</h3>
-                                <h6>Targetted CGPA</h6>
-                                <h3>3.75</h3>
-                            </div>
-                            <div class="db-icon">
-                                <img src="assets/img/icons/student-icon-02.svg" alt="Dashboard Icon">
-                            </div>
-                        </div>
+                    <div class="db-icon">
+                        <img src="assets/img/icons/teacher-icon-01.svg" alt="Dashboard Icon">
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="row">
-            <div class="col-12 col-lg-12 col-xl-8">
-                <div class="card flex-fill comman-shadow">
-                    <div class="card-header">
-                        <div class="row align-items-center">
-                            <div class="col-6">
-                                <h5 class="card-title">Study Plan Summary </h5>
-                                <p>for Upcoming Semester</p>
-                            </div>
-                            <div class="col-6">
-                                <ul class="chart-list-out">
-                                    <li><span class="circle-blue"></span><span class="circle-gray"></span><span
-                                            class="circle-gray"></span></li>
-                                    <li class="lesson-view-all"><a href="{{ url('view-course') }}">View Study Plan</a></li>
-                                    <li class="star-menus"><a href="javascript:;"><i class="fas fa-ellipsis-v"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+    </div>
+    <div class="col-xl-auto col-sm-6 col-12 d-flex">
+        <div class="card bg-comman">
+            <div class="card-body">
+                <div class="db-widgets d-flex justify-content-between align-items-center">
+                    <div class="db-info">
+                        <h6>Email</h6>
+                        <h3>fatihahadawiyah@gmail.com</h3>
                     </div>
-                    <div class="dash-circle">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 dash-widget1">
-                                <div class="circle-bar circle-bar2">
-                                    <div class="circle-graph2" data-percent="75">
-                                        <b>75%</b>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3">
-                                <div class="dash-details">
-                                    <div class="lesson-activity">
-                                        <div class="lesson-imgs">
-                                            <img src="assets/img/icons/lesson-icon-01.svg" alt="">
-                                        </div>
-                                        <div class="views-lesson">
-                                            <h5>Total subjects </h5>
-                                            <h4>6</h4>
-                                        </div>
-                                    </div>
-                                    <div class="lesson-activity">
-                                        <div class="lesson-imgs">
-                                            <img src="assets/img/icons/lesson-icon-02.svg" alt="">
-                                        </div>
-                                        <div class="views-lesson">
-                                            <h5>Total Credit Hours</h5>
-                                            <h4>13.5</h4>
-                                        </div>
-                                    </div>
-                                    <div class="lesson-activity">
-                                        <div class="lesson-imgs">
-                                            <img src="assets/img/icons/lesson-icon-03.svg" alt="">
-                                        </div>
-                                        <div class="views-lesson">
-                                            <h5>Credit Hours Completed</h5>
-                                            <h4>110/132</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3">
-                                <div class="dash-details">
-                                    <div class="lesson-activity">
-                                        <div class="lesson-imgs">
-                                            <img src="assets/img/icons/lesson-icon-04.svg" alt="">
-                                        </div>
-                                        <div class="views-lesson">
-                                            <h5>Semester Left</h5>
-                                            <h4>2</h4>
-                                        </div>
-                                    </div>
-                                    <div class="lesson-activity">
-                                        <div class="lesson-imgs">
-                                            <img src="assets/img/icons/lesson-icon-05.svg" alt="">
-                                        </div>
-                                        <div class="views-lesson">
-                                            <h5>Specialization</h5>
-                                            <h4>Bachelor of Information Technology</h4>
-                                        </div>
-                                    </div>
-                                    <div class="lesson-activity">
-                                        <div class="lesson-imgs">
-                                            <img src="assets/img/icons/lesson-icon-06.svg" alt="">
-                                        </div>
-                                        <div class="views-lesson">
-                                            <h5>Year of Study</h5>
-                                            <h4>3/4 years</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-center">
-                                <div class="skip-group">
-                                    <button type="submit" class="btn btn-info skip-btn">Edit</button>
-                                    <button type="submit" class="btn btn-info continue-btn">Continue</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-12 col-xl-12 d-flex">
-                        <div class="card flex-fill comman-shadow">
-                            <div class="card-header">
-                                <div class="row align-items-center">
-                                    <div class="col-6">
-                                        <h5 class="card-title">GPA/CGPA Tracker</h5>
-                                    </div>
-                                    <div class="col-6">
-                                        <ul class="chart-list-out">
-                                            <li><span class="circle-blue"></span>CGPA</li>
-                                            <li><span class="circle-green"></span>GPA</li>
-                                            <li class="star-menus"><a href="javascript:;"><i
-                                                        class="fas fa-ellipsis-v"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div id="apexcharts-area"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-12 col-xl-4 d-flex">
-                <div class="card flex-fill comman-shadow">
-                    <div class="card-body">
-                        <div id="calendar-doctor" class="calendar-container"></div>
-                        <div class="calendar-info calendar-info1">
-                            <div class="up-come-header">
-                                <h2>Upcoming Subjects</h2>
-                                <span><a href="{{ url('view-course') }}"><i class="feather-plus"></i></a></span>
-                            </div>
-                                <div class="upcome-event-date">
-                                <h3>Semester 2 2025/2026</h3>
-                                <span><i class="fas fa-ellipsis-h"></i></span>
-                            </div>
-                            <div class="calendar-details">
-                                <p>INFO 3301</p>
-                                <div class="calendar-box normal-bg">
-                                    <div class="calandar-event-name">
-                                        <h4>Web App Development</h4>
-                                        <h5>Target Grade: A</h5>
-                                    </div>
-                                    <span>Credit Hour: 3</span>
-                                </div>
-                            </div>
-                            <div class="calendar-details">
-                                <p>INFO 3302</p>
-                                <div class="calendar-box normal-bg">
-                                    <div class="calandar-event-name">
-                                        <h4>Data Warehousing </h4>
-                                        <h5>Target Grade: A-</h5>
-                                    </div>
-                                    <span>Credit Hour: 3</span>
-                                </div>
-                            </div>
-                            <div class="calendar-details">
-                                <p>INFO 4401</p>
-                                <div class="calendar-box normal-bg">
-                                    <div class="calandar-event-name">
-                                        <h4>Data Mining</h4>
-                                        <h5>Target Grade: B+</h5>
-                                    </div>
-                                    <span>Credit Hour: 3</span>
-                                </div>
-                            </div>
-                            <div class="calendar-details">
-                                <p>INFO 4402</p>
-                                <div class="calendar-box normal-bg">
-                                    <div class="calandar-event-name">
-                                        <h4>E-Commerce</h4>
-                                        <h5>Target Grade: A</h5>
-                                    </div>
-                                    <span>Credit Hour: 3</span>
-                                </div>
-                            </div>
-                            <div class="calendar-details">
-                                <p>CCUB 3301</p>
-                                <div class="calendar-box break-bg">
-                                    <div class="calandar-event-name">
-                                        <h4>Usrah In Action 2</h4>
-                                        <h5>Target Grade: A</h5>
-                                    </div>
-                                    <span>Credit Hour: 1</span>
-                                </div>
-                            </div>
-                            <div class="calendar-details">
-                                <p>CCFA 3302</p>
-                                <div class="calendar-box normal-bg">
-                                    <div class="calandar-event-name">
-                                        <h4>First Aid Skill 2</h4>
-                                        <h5>Target Grade: A</h5>
-                                    </div>
-                                    <span>Credit Hour: 0.5</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="db-icon">
+                        <img src="assets/img/icons/teacher-icon-02.svg" alt="Dashboard Icon">
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+</div>
+
+<div class="card report-card">
+<div class="card-body pb-0">
+<div class="row">
+<div class="col-md-12">
+<ul class="app-listing">
+<li>
+<div class="multipleSelection">
+<div class="selectBox">
+<p class="mb-0"><i class="fas fa-user-plus me-1 select-icon"></i> Select Department</p>
+<span class="down-icon"><i class="fas fa-chevron-down"></i></span>
+</div>
+<div id="checkBoxes">
+<form action="#">
+<p class="checkbox-title">Customer Search</p>
+<div class="form-custom">
+<input type="text" class="form-control bg-grey" placeholder="Enter Customer Name">
+</div>
+<div class="selectBox-cont">
+<label class="custom_check w-100">
+<input type="checkbox" name="username">
+<span class="checkmark"></span> Brian Johnson
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="username">
+<span class="checkmark"></span> Russell Copeland
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="username">
+<span class="checkmark"></span> Greg Lynch
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="username">
+<span class="checkmark"></span> John Blair
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="username">
+<span class="checkmark"></span> Barbara Moore
+ </label>
+<label class="custom_check w-100">
+<input type="checkbox" name="username">
+<span class="checkmark"></span> Hendry Evan
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="username">
+<span class="checkmark"></span> Richard Miles
+</label>
+</div>
+<button type="submit" class="btn w-100 btn-primary">Apply</button>
+<button type="reset" class="btn w-100 btn-grey">Reset</button>
+</form>
+</div>
+</div>
+</li>
+<li>
+<div class="multipleSelection">
+<div class="selectBox">
+<p class="mb-0"><i class="fas fa-calendar me-1 select-icon"></i> Select Specialization</p>
+<span class="down-icon"><i class="fas fa-chevron-down"></i></span>
+</div>
+<div id="checkBoxes">
+<form action="#">
+<p class="checkbox-title">Date Filter</p>
+<div class="selectBox-cont selectBox-cont-one h-auto">
+<div class="date-picker">
+<div class="form-custom cal-icon">
+<input class="form-control datetimepicker" type="text" placeholder="Form">
+</div>
+</div>
+<div class="date-picker pe-0">
+<div class="form-custom cal-icon">
+<input class="form-control datetimepicker" type="text" placeholder="To">
+</div>
+</div>
+<div class="date-list">
+<ul>
+<li><a href="#" class="btn date-btn">Today</a></li>
+<li><a href="#" class="btn date-btn">Yesterday</a></li>
+<li><a href="#" class="btn date-btn">Last 7 days</a></li>
+<li><a href="#" class="btn date-btn">This month</a></li>
+<li><a href="#" class="btn date-btn">Last month</a></li>
+</ul>
+</div>
+</div>
+</form>
+</div>
+</div>
+</li>
+<li>
+<div class="multipleSelection">
+<div class="selectBox">
+<p class="mb-0"><i class="fas fa-book-open me-1 select-icon"></i> Select Year & Semester</p>
+<span class="down-icon"><i class="fas fa-chevron-down"></i></span>
+</div>
+<div id="checkBoxes">
+<form action="#">
+<p class="checkbox-title">By Year & Semester</p>
+<div class="selectBox-cont">
+<label class="custom_check w-100">
+<input type="checkbox" name="name" checked>
+<span class="checkmark"></span> All Courses
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 1 Semester 1
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 1 Semester 2
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 2 Semester 1
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 2 Semester 2
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 3 Semester 1
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 3 Semester 2
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 4 Semester 1
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="name">
+<span class="checkmark"></span> Year 4 Semester 2
+</label>
+</div>
+<button type="submit" class="btn w-100 btn-primary">Apply</button>
+<button type="reset" class="btn w-100 btn-grey">Reset</button>
+</form>
+</div>
+</div>
+</li>
+<li>
+ <div class="multipleSelection">
+<div class="selectBox">
+<p class="mb-0"><i class="fas fa-bookmark me-1 select-icon"></i> Select Category</p>
+<span class="down-icon"><i class="fas fa-chevron-down"></i></span>
+</div>
+<div id="checkBoxes">
+<form action="#">
+<p class="checkbox-title">Category</p>
+<div class="form-custom">
+<input type="text" class="form-control bg-grey" placeholder="Enter Category Name">
+</div>
+<div class="selectBox-cont">
+<label class="custom_check w-100">
+<input type="checkbox" name="category">
+<span class="checkmark"></span> Kulliyyah Required Course
+</label>
+<label class="custom_check w-100">
+<input type="checkbox" name="category">
+<span class="checkmark"></span> Department Required Course
+</label>
+</div>
+<button type="submit" class="btn w-100 btn-primary">Apply</button>
+<button type="reset" class="btn w-100 btn-grey">Reset</button>
+</form>
+</div>
+</div>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
 
 
-    <footer>
-        <p>Copyright © 2025 MyKICT.</p>
-    </footer>
 
+
+<div class="card invoices-tabs-card border-0">
+<div class="card-body card-body pt-0 pb-0">
+<div class="invoices-main-tabs border-0 pb-0">
+<div class="row align-items-center">
+<div class="col-lg-12 col-md-12">
+<div class="invoices-settings-btn invoices-settings-btn-one">
+<a href="invoices-settings.html" class="invoices-settings-icon">
+<i class="feather feather-settings"></i>
+</a>
+<a href="add-invoice.html" class="btn">
+<i class="feather feather-plus-circle"></i> New Course
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+<div class="card invoices-grid-card w-100">
+<div class="card-header d-flex justify-content-between align-items-center">
+<a href="view-invoice.html" class="invoice-grid-link">INFO1003</a>
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a class="dropdown-item" href="edit-invoice.html"><i class="far fa-edit me-2"></i>Edit</a>
+<a class="dropdown-item" href="view-invoice.html"><i class="far fa-eye me-2"></i>View</a>
+<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</div>
+</div>
+</div>
+<div class="card-middle">
+<h2 class="card-middle-avatar">
+<a href="profile.html"> Elements of Programming</a>
+</h2>
+</div>
+
+<div class="card-body">
+    <div class="row align-items-center">
+        <div class="col">
+            <span><i class="fas fa-users"></i> Total Students</span>
+            <h6 class="mb-0">150</h6>
+        </div>
+        <div class="col-auto">
+            <span><i class="fas fa-columns"></i> Number of Sections</span>
+            <h6 class="mb-0">5</h6>
+        </div>
     </div>
+</div>
 
-    </div>
+
+<div class="card-footer">
+<div class="row align-items-center">
+<div class="col-auto">
+<span class="badge bg-success-dark">Open</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+<div class="card invoices-grid-card w-100">
+<div class="card-header d-flex justify-content-between align-items-center">
+<a href="view-invoice.html" class="invoice-grid-link">INFO1303</a>
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a class="dropdown-item" href="edit-invoice.html"><i class="far fa-edit me-2"></i>Edit</a>
+<a class="dropdown-item" href="view-invoice.html"><i class="far fa-eye me-2"></i>View</a>
+<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</div>
+</div>
+</div>
+<div class="card-middle">
+<h2 class="card-middle-avatar">
+<a href="profile.html"> Object Oriented Programming</a>
+</h2>
+</div>
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col">
+<span><i class="far fa-money-bill-alt"></i> Total Students</span>
+<h6 class="mb-0">132</h6>
+</div>
+<div class="col-auto">
+<span><i class="far fa-calendar-alt"></i> Number of Sections</span>
+<h6 class="mb-0">4</h6>
+</div>
+</div>
+</div>
+<div class="card-footer">
+<div class="row align-items-center">
+<div class="col-auto">
+<span class="badge bg-success-dark">Open</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+<div class="card invoices-grid-card w-100">
+<div class="card-header d-flex justify-content-between align-items-center">
+<a href="view-invoice.html" class="invoice-grid-link">CSCI1003</a>
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a class="dropdown-item" href="edit-invoice.html"><i class="far fa-edit me-2"></i>Edit</a>
+<a class="dropdown-item" href="view-invoice.html"><i class="far fa-eye me-2"></i>View</a>
+<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</div>
+</div>
+</div>
+<div class="card-middle">
+<h2 class="card-middle-avatar">
+<a href="profile.html">Introduction to Computer Organization</a>
+</h2>
+</div>
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col">
+<span><i class="far fa-money-bill-alt"></i> Total Students</span>
+<h6 class="mb-0">99</h6>
+</div>
+<div class="col-auto">
+<span><i class="far fa-calendar-alt"></i> Number of Sections</span>
+<h6 class="mb-0">3</h6>
+</div>
+</div>
+</div>
+<div class="card-footer">
+<div class="row align-items-center">
+<div class="col-auto">
+<span class="badge bg-success-dark">Open</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+<div class="card invoices-grid-card w-100">
+<div class="card-header d-flex justify-content-between align-items-center">
+<a href="view-invoice.html" class="invoice-grid-link">IN093439#@15</a>
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a class="dropdown-item" href="edit-invoice.html"><i class="far fa-edit me-2"></i>Edit</a>
+<a class="dropdown-item" href="view-invoice.html"><i class="far fa-eye me-2"></i>View</a>
+<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</div>
+</div>
+</div>
+<div class="card-middle">
+<h2 class="card-middle-avatar">
+<a href="profile.html">Alex Campbell</a>
+</h2>
+</div>
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col">
+<span><i class="far fa-money-bill-alt"></i> Amount</span>
+<h6 class="mb-0">$1,999</h6>
+</div>
+<div class="col-auto">
+<span><i class="far fa-calendar-alt"></i> Due Date</span>
+<h6 class="mb-0">08 Mar 2022</h6>
+</div>
+</div>
+</div>
+<div class="card-footer">
+<div class="row align-items-center">
+<div class="col-auto">
+<span class="badge bg-danger-dark">Overdue</span>
+</div>
+<div class="col text-end">
+<span class="text-danger text-sm">Overdue 10 days</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
+<div class="card invoices-grid-card w-100">
+<div class="card-header d-flex justify-content-between align-items-center">
+<a href="view-invoice.html" class="invoice-grid-link">IN093439#@016</a>
+<div class="dropdown dropdown-action">
+<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a class="dropdown-item" href="edit-invoice.html"><i class="far fa-edit me-2"></i>Edit</a>
+<a class="dropdown-item" href="view-invoice.html"><i class="far fa-eye me-2"></i>View</a>
+<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</div>
+</div>
+</div>
+<div class="card-middle">
+<h2 class="card-middle-avatar">
+<a href="profile.html">Marie Canales</a>
+</h2>
+</div>
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col">
+<span><i class="far fa-money-bill-alt"></i> Amount</span>
+<h6 class="mb-0">$2,700</h6>
+</div>
+<div class="col-auto">
+<span><i class="far fa-calendar-alt"></i> Due Date</span>
+<h6 class="mb-0">18 Mar, 2022</h6>
+</div>
+</div>
+</div>
+<div class="card-footer">
+<div class="row align-items-center">
+<div class="col-auto">
+<span class="badge bg-success-dark">Paid</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="invoice-load-btn">
+<a href="#" class="btn">
+<span class="spinner-border text-primary"></span> Load more
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
