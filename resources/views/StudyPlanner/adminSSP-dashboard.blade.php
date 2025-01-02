@@ -415,45 +415,7 @@
 </div>
 </div>
 </div>
-<div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
-<div class="card invoices-grid-card w-100">
-<div class="card-header d-flex justify-content-between align-items-center">
-<a href="view-invoice.html" class="invoice-grid-link">IN093439#@016</a>
-<div class="dropdown dropdown-action">
-<a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
-<div class="dropdown-menu dropdown-menu-end">
-<a class="dropdown-item" href="edit-invoice.html"><i class="far fa-edit me-2"></i>Edit</a>
-<a class="dropdown-item" href="view-invoice.html"><i class="far fa-eye me-2"></i>View</a>
-<a class="dropdown-item" href="javascript:void(0);"><i class="far fa-trash-alt me-2"></i>Delete</a>
-</div>
-</div>
-</div>
-<div class="card-middle">
-<h2 class="card-middle-avatar">
-<a href="profile.html">Marie Canales</a>
-</h2>
-</div>
-<div class="card-body">
-<div class="row align-items-center">
-<div class="col">
-<span><i class="far fa-money-bill-alt"></i> Amount</span>
-<h6 class="mb-0">$2,700</h6>
-</div>
-<div class="col-auto">
-<span><i class="far fa-calendar-alt"></i> Due Date</span>
-<h6 class="mb-0">18 Mar, 2022</h6>
-</div>
-</div>
-</div>
-<div class="card-footer">
-<div class="row align-items-center">
-<div class="col-auto">
-<span class="badge bg-success-dark">Paid</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <div class="col-lg-12">
 <div class="invoice-load-btn">
 <a href="#" class="btn">
