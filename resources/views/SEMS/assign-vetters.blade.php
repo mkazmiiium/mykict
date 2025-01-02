@@ -10,9 +10,8 @@
 <div class="content container-fluid">
     <div class="page-header">
         <div class="row align-items-center">
-            <div class="col">
-                <h1 class="page-title">HOD SEMS DASHBOARD</h1>
-                <h1 class="page-title">Welcome Dr Khairul</h1>
+            <div class="col text-center">
+                <h1 class="page-title">HOD SEMS DASHBOARD,       Welcome Dr Khairul!</h1>
                 <ul class="breadcrumb justify-content-center" style="list-style: none; padding: 0; margin-top: 20px;">
                     <li class="breadcrumb-item">
                         <a href="SEMS-dashboard" style="color: #000000; text-decoration: none;">SEMS</a>
@@ -22,32 +21,6 @@
             </div>
         </div>
     </div>
-
-    <div class="student-group-form">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search by ID ...">
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search by Name ...">
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search by Class ...">
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="search-student-btn">
-                    <button type="btn" class="btn btn-primary">Search</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="row">
         <div class="col-sm-12">
             <div class="card card-table">
