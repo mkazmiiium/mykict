@@ -76,6 +76,10 @@ Route::get('edit-question', function () {
 
 
 // SSP
+// Route for Main Welcome Page
+Route::get('mainSSP-welcome', function () {
+    return view('StudyPlanner.mainSSP-welcome');
+})->name('mainSSP.welcome');
 
 // Route for Student Welcome Page
 Route::get('SSP-welcome', function () {
