@@ -188,7 +188,7 @@
                             </div>
                         </div> --}}
                         {{-- <a class="dropdown-item" href="profile.html">My Profile</a> --}}
-                        <a class="dropdown-item" href="{{ route('profile.show') }}">My Profile</a>
+                        <a class="dropdown-item" href="{{ route('update.profile') }}">My Profile</a>
 
                         {{-- <x-dropdown-link href="{{ route('profile.show') }}">
                             {{ __('My Profile') }}

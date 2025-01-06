@@ -91,6 +91,11 @@ Route::get('SSP-dashboard', function () {
     return view('StudyPlanner.SSP-dashboard');
 })->name('SSP.dashboard');
 
+// Route for Update Profile
+Route::get('update-profile', function () {
+    return view('StudyPlanner.update-profile');
+})->name('update.profile');
+
 // Route for View Course Suggested
 Route::get('view-course', function () {
     return view('StudyPlanner.view-course');
@@ -125,4 +130,5 @@ Route::get('add-studyplan', function () {
 Route::get('add-course', function () {
     return view('StudyPlanner.add-course');
 })->name('add.course');
+
 
