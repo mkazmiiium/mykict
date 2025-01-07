@@ -3,8 +3,6 @@
 @section('content')
 
 <div class="content container-fluid">
-
-
     <div class="page-header">
         <div class="row">
             <div class="col">
@@ -98,11 +96,11 @@
                     <form action="#" id="questionForm{{ $data['id'] }}">
                         <div class="form-group">
                             <label>Question</label>
-                            <textarea class="form-control" rows="3">{{ $data['question'] }}</textarea>
+                            <textarea class="tinymce form-control" rows="3">{{ $data['question'] }}</textarea>
                         </div>
                         <div class="form-group">
                             <label>Answer</label>
-                            <textarea class="form-control" rows="3">{{ $data['answer'] }}</textarea>
+                            <textarea class="tinymce form-control" rows="3">{{ $data['answer'] }}</textarea>
                         </div>
                         <div class="form-group">
                             <label>Comments</label>
@@ -144,19 +142,28 @@
     </div>
     @endforeach
 
-<!-- Submit Button -->
-<div class="form-group mb-0 row">
-    <div class="col-md-10 offset-md-2">
-        <button type="button" class="btn btn-success me-2" onclick="handleCompleteEdit()">Complete Edit</button>
+    <!-- Submit Button -->
+    <div class="form-group mb-0 row">
+        <div class="col-md-10 offset-md-2">
+            <button type="button" class="btn btn-success me-2" onclick="handleCompleteEdit()">Complete Edit</button>
+        </div>
     </div>
 </div>
-</div>
 
+<!-- TinyMCE Script -->
+<script src="{{ asset('assets/js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
 <script>
+    tinymce.init({
+        selector: 'textarea.tinymce',
+        plugins: 'lists link image table code',
+        toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | code',
+        height: 300,
+        branding: false
+    });
+
     function handleCompleteEdit() {
         alert('Success! The edits have been completed and sent back to the department.');
     }
 </script>
-
 
 @endsection

@@ -27,15 +27,15 @@
 
         <!-- Add Buttons -->
         <div style="margin-top: 15px;">
-            <a href="{{ route('CC.dashboard') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Course Coordinator Dashboard</a>
+            <a href="{{ route('CC.dashboard') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Course Coordinator </a>
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('vetters.page') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Vetters Dashboard</a>
+            <a href="{{ route('vetters.page') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Vetters </a>
         </div>
 
         <div style="margin-top: 15px;">
-            <a href="{{ route('assign.vetters') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Department Dashboard</a>
+            <a href="{{ route('assign.vetters') }}" class="btn btn-primary btn-lg" style="margin-bottom: 10px;">Department </a>
         </div>
 
     </div>

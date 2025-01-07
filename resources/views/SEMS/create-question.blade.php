@@ -130,10 +130,22 @@
  <!-- Submit Buttons -->
  <div class="form-group mb-0 row">
      <div class="col-md-10 offset-md-2">
-         <button type="button" class="btn btn-success me-2">Send for Vetting</button>
          <button type="button" class="btn btn-secondary">Save Draft</button>
      </div>
  </div>
+    <!-- Submit Button -->
+    <div class="form-group mb-0 row">
+        <div class="col-md-10 offset-md-2">
+            <button type="button" class="btn btn-success me-2" onclick="handleCompleteQuestion()">Send to Department</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function handleCompleteQuestion() {
+        alert('Success! The questions have been reviewed and sent back to the department.');
+    }
+</script>
 </div>
 
 <!-- Include TinyMCE -->
