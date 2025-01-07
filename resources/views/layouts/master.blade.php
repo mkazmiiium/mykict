@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+   <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     {{-- <link rel="stylesheet" href="assets/plugins/simple-calendar/simple-calendar.css"> --}}
@@ -188,7 +188,7 @@
                             </div>
                         </div> --}}
                         {{-- <a class="dropdown-item" href="profile.html">My Profile</a> --}}
-                        <a class="dropdown-item" href="{{ route('profile.show') }}">My Profile</a>
+                        <a class="dropdown-item" href="{{ route('update.profile') }}">My Profile</a>
 
                         {{-- <x-dropdown-link href="{{ route('profile.show') }}">
                             {{ __('My Profile') }}

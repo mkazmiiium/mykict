@@ -76,6 +76,10 @@ Route::get('edit-question', function () {
 
 
 // SSP
+// Route for Main Welcome Page
+Route::get('mainSSP-welcome', function () {
+    return view('StudyPlanner.mainSSP-welcome');
+})->name('mainSSP.welcome');
 
 // Route for Student Welcome Page
 Route::get('SSP-welcome', function () {
@@ -86,6 +90,11 @@ Route::get('SSP-welcome', function () {
 Route::get('SSP-dashboard', function () {
     return view('StudyPlanner.SSP-dashboard');
 })->name('SSP.dashboard');
+
+// Route for Update Profile
+Route::get('update-profile', function () {
+    return view('StudyPlanner.update-profile');
+})->name('update.profile');
 
 // Route for View Course Suggested
 Route::get('view-course', function () {
@@ -121,4 +130,5 @@ Route::get('add-studyplan', function () {
 Route::get('add-course', function () {
     return view('StudyPlanner.add-course');
 })->name('add.course');
+
 
